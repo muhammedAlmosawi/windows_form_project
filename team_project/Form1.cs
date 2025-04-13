@@ -33,14 +33,12 @@ namespace team_project
 		{
 			using (Pen pen = new Pen(Color.Black, 1))
 			{
-				// Draw a horizontal line (x1, y1, x2, y2)
 				e.Graphics.DrawLine(pen, 0.0f, 0.0f, 300.0f, 0.0f);
 				e.Graphics.DrawLine(pen, 300.0f, 0.0f, 350.0f, 50f);
 				e.Graphics.DrawLine(pen, 350f, 50f, 530f, 50f);
 				e.Graphics.DrawLine(pen, 530f, 50f, 580f, 0f);
 				e.Graphics.DrawLine(pen, 580f, 0f, 1000, 0f);
 			}
-
 		}
 		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
@@ -66,10 +64,44 @@ namespace team_project
 				label16.Text = "رئيس قسم الشبكات";
 			}
 		}
+		private void panel2_Paint(object sender, PaintEventArgs e)
+		{
+			using (Pen pen = new Pen(Color.Black, 1))
+			{
+				e.Graphics.DrawLine(pen, 0.0f, 30.0f, 100.0f, 30.0f);
+				e.Graphics.DrawLine(pen, 100.0f, 30.0f, 125.0f, 0f);
+				e.Graphics.DrawLine(pen, 125f, 0f, 325f, 0f);
+				e.Graphics.DrawLine(pen, 325f, 0f, 350f, 30f);
+				e.Graphics.DrawLine(pen, 350f, 30f, 450f, 30f);
+			}
+		}
 
 		private void textBox2_TextChanged(object sender, EventArgs e)
 		{
 			textBox7.Text = textBox2.Text;
+			textBox8.Text = textBox2.Text;
+			textBox10.Text = textBox2.Text;
+		}
+
+		private void textBox7_TextChanged(object sender, EventArgs e)
+		{
+			textBox2.Text = textBox7.Text;
+			textBox8.Text = textBox7.Text;
+			textBox10.Text = textBox7.Text;
+		}
+
+		private void textBox8_TextChanged(object sender, EventArgs e)
+		{
+			textBox2.Text = textBox8.Text;
+			textBox7.Text = textBox8.Text;
+			textBox10.Text = textBox8.Text;
+		}
+
+		private void textBox10_TextChanged(object sender, EventArgs e)
+		{
+			textBox2.Text = textBox10.Text;
+			textBox7.Text = textBox10.Text;
+			textBox8.Text = textBox10.Text;
 		}
 	}
 }

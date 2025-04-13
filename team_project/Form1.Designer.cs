@@ -54,6 +54,11 @@
 			this.label16 = new System.Windows.Forms.Label();
 			this.textBox7 = new System.Windows.Forms.TextBox();
 			this.label17 = new System.Windows.Forms.Label();
+			this.panel2 = new System.Windows.Forms.Panel();
+			this.label18 = new System.Windows.Forms.Label();
+			this.textBox8 = new System.Windows.Forms.TextBox();
+			this.textBox10 = new System.Windows.Forms.TextBox();
+			this.panel2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -233,7 +238,7 @@
 			// 
 			// textBox5
 			// 
-			this.textBox5.Location = new System.Drawing.Point(63, 347);
+			this.textBox5.Location = new System.Drawing.Point(63, 340);
 			this.textBox5.Multiline = true;
 			this.textBox5.Name = "textBox5";
 			this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -263,11 +268,11 @@
 			// 
 			// textBox6
 			// 
-			this.textBox6.Location = new System.Drawing.Point(525, 650);
+			this.textBox6.Location = new System.Drawing.Point(409, 650);
 			this.textBox6.Multiline = true;
 			this.textBox6.Name = "textBox6";
 			this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.textBox6.Size = new System.Drawing.Size(201, 392);
+			this.textBox6.Size = new System.Drawing.Size(317, 291);
 			this.textBox6.TabIndex = 23;
 			// 
 			// label15
@@ -300,6 +305,7 @@
 			this.textBox7.Name = "textBox7";
 			this.textBox7.Size = new System.Drawing.Size(100, 20);
 			this.textBox7.TabIndex = 26;
+			this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
 			// 
 			// label17
 			// 
@@ -312,11 +318,49 @@
 			this.label17.TabIndex = 27;
 			this.label17.Text = "                    ";
 			// 
+			// panel2
+			// 
+			this.panel2.Controls.Add(this.textBox10);
+			this.panel2.Controls.Add(this.textBox8);
+			this.panel2.Controls.Add(this.label18);
+			this.panel2.Location = new System.Drawing.Point(152, 974);
+			this.panel2.Name = "panel2";
+			this.panel2.Size = new System.Drawing.Size(560, 56);
+			this.panel2.TabIndex = 28;
+			this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label18.Location = new System.Drawing.Point(126, 9);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(199, 20);
+			this.label18.TabIndex = 0;
+			this.label18.Text = "sw@itnet.uobabylon.edu.iq";
+			// 
+			// textBox8
+			// 
+			this.textBox8.Location = new System.Drawing.Point(0, 7);
+			this.textBox8.Name = "textBox8";
+			this.textBox8.Size = new System.Drawing.Size(100, 20);
+			this.textBox8.TabIndex = 29;
+			this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+			// 
+			// textBox10
+			// 
+			this.textBox10.Location = new System.Drawing.Point(352, 7);
+			this.textBox10.Name = "textBox10";
+			this.textBox10.Size = new System.Drawing.Size(100, 20);
+			this.textBox10.TabIndex = 29;
+			this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 1066);
+			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.label17);
 			this.Controls.Add(this.textBox7);
 			this.Controls.Add(this.label16);
@@ -346,6 +390,8 @@
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
+			this.panel2.ResumeLayout(false);
+			this.panel2.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -379,6 +425,10 @@
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.TextBox textBox7;
 		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Label label18;
+		private System.Windows.Forms.TextBox textBox8;
+		private System.Windows.Forms.TextBox textBox10;
 	}
 }
 
