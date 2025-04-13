@@ -66,5 +66,10 @@ namespace team_project
 				label16.Text = "رئيس قسم الشبكات";
 			}
 		}
+
+		private void textBox2_TextChanged(object sender, EventArgs e)
+		{
+			textBox7.Text = textBox2.Text;
+		}
 	}
 }

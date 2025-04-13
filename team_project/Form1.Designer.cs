@@ -181,6 +181,7 @@
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(100, 20);
 			this.textBox2.TabIndex = 14;
+			this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
 			// 
 			// label10
 			// 
@@ -276,9 +277,10 @@
 			this.label15.Location = new System.Drawing.Point(88, 727);
 			this.label15.Name = "label15";
 			this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.label15.Size = new System.Drawing.Size(82, 13);
+			this.label15.Size = new System.Drawing.Size(100, 13);
 			this.label15.TabIndex = 24;
-			this.label15.Text = "                         ";
+			this.label15.Text = "                               ";
+			this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// label16
 			// 
@@ -287,9 +289,10 @@
 			this.label16.Location = new System.Drawing.Point(88, 762);
 			this.label16.Name = "label16";
 			this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.label16.Size = new System.Drawing.Size(82, 13);
+			this.label16.Size = new System.Drawing.Size(73, 13);
 			this.label16.TabIndex = 25;
-			this.label16.Text = "                         ";
+			this.label16.Text = "                      ";
+			this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// textBox7
 			// 
@@ -301,11 +304,13 @@
 			// label17
 			// 
 			this.label17.AutoSize = true;
-			this.label17.Location = new System.Drawing.Point(672, 112);
+			this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.label17.Location = new System.Drawing.Point(636, 110);
 			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(41, 13);
+			this.label17.Size = new System.Drawing.Size(110, 24);
 			this.label17.TabIndex = 27;
-			this.label17.Text = "label17";
+			this.label17.Text = "                    ";
 			// 
 			// Form1
 			// 
