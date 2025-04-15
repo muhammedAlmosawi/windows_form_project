@@ -120,8 +120,8 @@
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
             "Software departement",
-            "Cybersecuirty deparetement",
-            "networks departement"});
+            "Cybersecurity deparetement",
+            "Networks departement"});
 			this.comboBox1.Location = new System.Drawing.Point(44, 119);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(208, 28);
@@ -210,6 +210,7 @@
 			this.textBox3.Size = new System.Drawing.Size(275, 20);
 			this.textBox3.TabIndex = 16;
 			this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
 			// 
 			// label11
 			// 
@@ -229,6 +230,7 @@
 			this.textBox4.Size = new System.Drawing.Size(231, 20);
 			this.textBox4.TabIndex = 18;
 			this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
 			// 
 			// label12
 			// 
@@ -248,6 +250,7 @@
 			this.textBox5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.textBox5.Size = new System.Drawing.Size(663, 221);
 			this.textBox5.TabIndex = 20;
+			this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
 			// 
 			// label13
 			// 
@@ -278,6 +281,7 @@
 			this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
 			this.textBox6.Size = new System.Drawing.Size(317, 291);
 			this.textBox6.TabIndex = 23;
+			this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
 			// 
 			// label15
 			// 
@@ -358,6 +362,7 @@
 			this.textBox12.Name = "textBox12";
 			this.textBox12.Size = new System.Drawing.Size(100, 20);
 			this.textBox12.TabIndex = 31;
+			this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
 			// 
 			// pictureBox1
 			// 
