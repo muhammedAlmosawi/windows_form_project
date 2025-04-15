@@ -42,21 +42,21 @@ namespace team_project
 		}
 		private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			if (comboBox1.SelectedItem == "Software departement")
+			if (comboBox1.SelectedItem.Equals("Software departement"))
 			{
 				label4.Text = "Software Departement";
 				label17.Text = "قسم البرمجيات";
 				label15.Text = "ا.م.د.سرى زكي جاسم";
 				label16.Text = "رئيس قسم البرمجيات";
 			} 
-			if (comboBox1.SelectedItem == "Cybersecuirty deparetement")
+			if (comboBox1.SelectedItem.Equals("Cybersecuirty deparetement"))
 			{
 				label4.Text = "Cybersecurity Departement";
 				label17.Text = "قسم الامن السيبراني";
 				label15.Text = "أ.م.د.احمد خلفه عبيد";
 				label16.Text = "رئيس قسم الامن السيبراني";
 			}
-			if (comboBox1.SelectedItem == "networks departement")
+			if (comboBox1.SelectedItem.Equals("networks departement"))
 			{
 				label4.Text = "Networks Departememnt";
 				label17.Text = "قسم الشبكات";
@@ -78,30 +78,29 @@ namespace team_project
 
 		private void textBox2_TextChanged(object sender, EventArgs e)
 		{
-			textBox7.Text = textBox2.Text;
+			textBox12.Text = textBox2.Text;
 			textBox8.Text = textBox2.Text;
 			textBox10.Text = textBox2.Text;
 		}
 
 		private void textBox7_TextChanged(object sender, EventArgs e)
 		{
-			textBox2.Text = textBox7.Text;
-			textBox8.Text = textBox7.Text;
-			textBox10.Text = textBox7.Text;
+
 		}
 
 		private void textBox8_TextChanged(object sender, EventArgs e)
 		{
 			textBox2.Text = textBox8.Text;
-			textBox7.Text = textBox8.Text;
+			textBox12.Text = textBox8.Text;
 			textBox10.Text = textBox8.Text;
 		}
 
 		private void textBox10_TextChanged(object sender, EventArgs e)
 		{
 			textBox2.Text = textBox10.Text;
-			textBox7.Text = textBox10.Text;
+			textBox12.Text = textBox10.Text;
 			textBox8.Text = textBox10.Text;
 		}
+
 	}
 }

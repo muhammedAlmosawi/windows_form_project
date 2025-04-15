@@ -52,13 +52,15 @@
 			this.textBox6 = new System.Windows.Forms.TextBox();
 			this.label15 = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
 			this.label17 = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.label18 = new System.Windows.Forms.Label();
-			this.textBox8 = new System.Windows.Forms.TextBox();
 			this.textBox10 = new System.Windows.Forms.TextBox();
+			this.textBox8 = new System.Windows.Forms.TextBox();
+			this.label18 = new System.Windows.Forms.Label();
+			this.textBox12 = new System.Windows.Forms.TextBox();
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -114,14 +116,15 @@
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
             "Software departement",
             "Cybersecuirty deparetement",
             "networks departement"});
-			this.comboBox1.Location = new System.Drawing.Point(63, 124);
+			this.comboBox1.Location = new System.Drawing.Point(44, 119);
 			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(152, 21);
+			this.comboBox1.Size = new System.Drawing.Size(208, 28);
 			this.comboBox1.TabIndex = 6;
 			this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
 			// 
@@ -182,6 +185,7 @@
 			// 
 			// textBox2
 			// 
+			this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox2.Location = new System.Drawing.Point(84, 238);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(100, 20);
@@ -278,11 +282,11 @@
 			// label15
 			// 
 			this.label15.AutoSize = true;
-			this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label15.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Bold);
 			this.label15.Location = new System.Drawing.Point(88, 727);
 			this.label15.Name = "label15";
 			this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.label15.Size = new System.Drawing.Size(100, 13);
+			this.label15.Size = new System.Drawing.Size(168, 29);
 			this.label15.TabIndex = 24;
 			this.label15.Text = "                               ";
 			this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -290,31 +294,23 @@
 			// label16
 			// 
 			this.label16.AutoSize = true;
-			this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Bold);
 			this.label16.Location = new System.Drawing.Point(88, 762);
 			this.label16.Name = "label16";
 			this.label16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-			this.label16.Size = new System.Drawing.Size(73, 13);
+			this.label16.Size = new System.Drawing.Size(123, 29);
 			this.label16.TabIndex = 25;
 			this.label16.Text = "                      ";
 			this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// textBox7
-			// 
-			this.textBox7.Location = new System.Drawing.Point(81, 794);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(100, 20);
-			this.textBox7.TabIndex = 26;
-			this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
-			// 
 			// label17
 			// 
 			this.label17.AutoSize = true;
-			this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label17.Font = new System.Drawing.Font("Traditional Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.label17.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
 			this.label17.Location = new System.Drawing.Point(636, 110);
 			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(110, 24);
+			this.label17.Size = new System.Drawing.Size(113, 29);
 			this.label17.TabIndex = 27;
 			this.label17.Text = "                    ";
 			// 
@@ -329,6 +325,22 @@
 			this.panel2.TabIndex = 28;
 			this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
 			// 
+			// textBox10
+			// 
+			this.textBox10.Location = new System.Drawing.Point(352, 7);
+			this.textBox10.Name = "textBox10";
+			this.textBox10.Size = new System.Drawing.Size(100, 20);
+			this.textBox10.TabIndex = 29;
+			this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+			// 
+			// textBox8
+			// 
+			this.textBox8.Location = new System.Drawing.Point(0, 7);
+			this.textBox8.Name = "textBox8";
+			this.textBox8.Size = new System.Drawing.Size(100, 20);
+			this.textBox8.TabIndex = 29;
+			this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+			// 
 			// label18
 			// 
 			this.label18.AutoSize = true;
@@ -339,30 +351,32 @@
 			this.label18.TabIndex = 0;
 			this.label18.Text = "sw@itnet.uobabylon.edu.iq";
 			// 
-			// textBox8
+			// textBox12
 			// 
-			this.textBox8.Location = new System.Drawing.Point(0, 7);
-			this.textBox8.Name = "textBox8";
-			this.textBox8.Size = new System.Drawing.Size(100, 20);
-			this.textBox8.TabIndex = 29;
-			this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+			this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textBox12.Location = new System.Drawing.Point(81, 806);
+			this.textBox12.Name = "textBox12";
+			this.textBox12.Size = new System.Drawing.Size(100, 20);
+			this.textBox12.TabIndex = 31;
 			// 
-			// textBox10
+			// pictureBox1
 			// 
-			this.textBox10.Location = new System.Drawing.Point(352, 7);
-			this.textBox10.Name = "textBox10";
-			this.textBox10.Size = new System.Drawing.Size(100, 20);
-			this.textBox10.TabIndex = 29;
-			this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
+			this.pictureBox1.Image = global::team_project.Properties.Resources.Untitled;
+			this.pictureBox1.Location = new System.Drawing.Point(365, 8);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(142, 171);
+			this.pictureBox1.TabIndex = 32;
+			this.pictureBox1.TabStop = false;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 1066);
+			this.ClientSize = new System.Drawing.Size(800, 1061);
+			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.textBox12);
 			this.Controls.Add(this.panel2);
 			this.Controls.Add(this.label17);
-			this.Controls.Add(this.textBox7);
 			this.Controls.Add(this.label16);
 			this.Controls.Add(this.label15);
 			this.Controls.Add(this.textBox6);
@@ -387,11 +401,14 @@
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+			this.MaximizeBox = false;
 			this.Name = "Form1";
 			this.Text = "Form1";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.panel2.ResumeLayout(false);
 			this.panel2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -423,12 +440,13 @@
 		private System.Windows.Forms.TextBox textBox6;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.TextBox textBox7;
 		private System.Windows.Forms.Label label17;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.TextBox textBox8;
 		private System.Windows.Forms.TextBox textBox10;
+		private System.Windows.Forms.TextBox textBox12;
+		private System.Windows.Forms.PictureBox pictureBox1;
 	}
 }
 
